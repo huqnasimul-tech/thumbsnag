@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══════════════════════════════════════════════════
+       PRIMARY SEO META
+       Change the <link rel="canonical"> domain to your real domain
+       ═══════════════════════════════════════════════════ -->
+  <title>YouTube Thumbnail Downloader – Download HD Thumbnails Free</title>
+  <meta name="description" content="Download any YouTube or Vimeo thumbnail in HD (1280×720), SD, HQ and more — free, instant, no sign-up. Just paste the video URL and save the image." />
+  <meta name="keywords" content="youtube thumbnail downloader, download youtube thumbnail, youtube thumbnail grabber, vimeo thumbnail download, free thumbnail downloader, hd youtube thumbnail, youtube video thumbnail, thumbnail extractor" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://thumbsnag.com/" />
+
+  <!-- ═══════════════════════════════════════════════════
+       FAVICON / MANIFEST
+       ═══════════════════════════════════════════════════ -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <meta name="theme-color" content="#ff0000" />
+
+  <!-- ═══════════════════════════════════════════════════
+       OPEN GRAPH (Facebook / LinkedIn)
+       ═══════════════════════════════════════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://thumbsnag.com/" />
+  <meta property="og:title"       content="YouTube Thumbnail Downloader – Download HD Thumbnails Free" />
+  <meta property="og:description" content="Paste any YouTube or Vimeo URL and download the thumbnail in every available resolution for free. No sign-up needed." />
+  <meta property="og:image"       content="https://thumbsnag.com/og-image.jpg" />
+  <meta property="og:locale"      content="en_US" />
+  <meta property="og:site_name"   content="ThumbSnag" />
+
+  <!-- ═══════════════════════════════════════════════════
+       TWITTER CARD
+       ═══════════════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="YouTube Thumbnail Downloader – HD, Free, Instant" />
+  <meta name="twitter:description" content="Download YouTube & Vimeo thumbnails in HD, SD, HQ and more. Free tool, no sign-up." />
+  <meta name="twitter:image"       content="https://thumbsnag.com/og-image.jpg" />
+
+  <!-- ═══════════════════════════════════════════════════
+       STRUCTURED DATA — JSON-LD
+       Gives Google rich results: Web App, How-To, FAQ,
+       BreadcrumbList. All four schemas on one page.
+       ═══════════════════════════════════════════════════ -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ThumbSnag",
+      "url": "https://thumbsnag.com/",
+      "description": "Free YouTube and Vimeo thumbnail downloader. Get HD, SD, HQ thumbnails in one click.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://thumbsnag.com/?url={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "ThumbSnag – YouTube Thumbnail Downloader",
+      "url": "https://thumbsnag.com/",
+      "description": "Download any YouTube or Vimeo video thumbnail for free in HD (1280×720), SD, HQ, MQ and default resolutions. No sign-up, no install.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": [
+        "Download YouTube thumbnails in HD 1280×720",
+        "Download Vimeo thumbnails",
+        "Multiple resolutions: HD, SD, HQ, MQ, Default",
+        "No sign-up required",
+        "Free to use"
+      ],
+      "browserRequirements": "Requires JavaScript"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to Download a YouTube Thumbnail",
+      "description": "Step-by-step guide to download any YouTube video thumbnail for free using ThumbSnag.",
+      "totalTime": "PT1M",
+      "tool": [{ "@type": "HowToTool", "name": "ThumbSnag" }],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Copy the YouTube URL",
+          "text": "Open the YouTube video you want the thumbnail for and copy its URL from the address bar.",
+          "image": "https://thumbsnag.com/step1.jpg"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Paste the URL",
+          "text": "Paste the copied URL into the input field on ThumbSnag and click 'Get Thumbnails'.",
+          "image": "https://thumbsnag.com/step2.jpg"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Choose a resolution",
+          "text": "Browse all available thumbnail resolutions — HD (1280×720), SD, HQ, MQ, and Default.",
+          "image": "https://thumbsnag.com/step3.jpg"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Download the thumbnail",
+          "text": "Click the Download button next to the resolution you want. The image saves directly to your device.",
+          "image": "https://thumbsnag.com/step4.jpg"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I download a YouTube thumbnail?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Copy the YouTube video URL, paste it into ThumbSnag, and click 'Get Thumbnails'. You can then download the thumbnail in HD (1280×720), SD (640×480), HQ (480×360), MQ (320×180) or default (120×90) resolution — all for free."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is downloading YouTube thumbnails legal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "YouTube thumbnail images are publicly accessible. Downloading them for personal use, research, or fair-use purposes is generally acceptable. Always respect copyright — if a thumbnail contains proprietary artwork, seek permission before commercial reuse."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I download Vimeo thumbnails too?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ThumbSnag supports Vimeo as well as YouTube. Paste any vimeo.com or player.vimeo.com URL and we'll retrieve the highest quality thumbnail available for that video."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why is the HD (maxresdefault) thumbnail not available for my video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "YouTube only generates a 1280×720 maxresdefault thumbnail for videos that were uploaded in HD. Older or low-resolution videos may only have SD (640×480) or HQ (480×360) thumbnails. ThumbSnag automatically hides sizes that don't exist so you only see what's actually available."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to create an account or pay anything?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. ThumbSnag is completely free and requires no sign-up, no account, and no payment. Simply paste a URL and download."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What YouTube URL formats are supported?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ThumbSnag supports youtube.com/watch?v=, youtu.be/ short links, YouTube Shorts (youtube.com/shorts/), YouTube Live URLs, and embed URLs (youtube.com/embed/)."
+          }
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://thumbsnag.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "YouTube Thumbnail Downloader",
+          "item": "https://thumbsnag.com/"
+        }
+      ]
+    }
+  ]
+  </script>
+
+  <!-- ═══════════════════════════════════════════════════
+       GOOGLE ADSENSE — replace ca-pub-XXXXXXXXXXXXXXXX
+       ═══════════════════════════════════════════════════ -->
+  <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://img.youtube.com" />
+  <link rel="preconnect" href="https://i.vimeocdn.com" />
+  <link rel="preconnect" href="https://vimeo.com" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --red:    #ff0000;
+      --dark:   #111827;
+      --mid:    #374151;
+      --light:  #f9fafb;
+      --border: #e5e7eb;
+      --blue:   #2563eb;
+      --green:  #16a34a;
+      --radius: 10px;
+      --shadow: 0 4px 24px rgba(0,0,0,.08);
+    }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: var(--light);
+      color: var(--dark);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+    }
+
+    /* Ad Wrappers */
+    .ad-unit {
+      display: flex; align-items: center; justify-content: center;
+      background: #f3f4f6; border: 1px dashed #d1d5db;
+      color: #9ca3af; font-size: 11px; letter-spacing: .05em;
+      text-transform: uppercase; border-radius: 4px; overflow: hidden; position: relative;
+    }
+    .ad-unit::before { content: 'Advertisement'; position: absolute; top: 4px; left: 8px; font-size: 10px; color: #9ca3af; }
+    .ad-leaderboard  { width: 100%; max-width: 728px; height: 90px; margin: 0 auto; }
+    .ad-rectangle    { width: 300px; height: 250px; flex-shrink: 0; }
+
+    /* Header */
+    header { background: #fff; border-bottom: 1px solid var(--border); padding: 10px 20px; }
+    .header-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: inherit; }
+    .logo-icon { width: 36px; height: 36px; background: var(--red); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    .logo-icon svg { width: 20px; height: 20px; fill: #fff; }
+    .logo-text h1 { font-size: 16px; font-weight: 700; line-height: 1.2; }
+    .logo-text span { font-size: 11px; color: #6b7280; }
+
+    /* Nav */
+    nav { margin-left: auto; }
+    nav ul { list-style: none; display: flex; gap: 20px; }
+    nav a { font-size: 13px; color: var(--mid); text-decoration: none; font-weight: 500; }
+    nav a:hover { color: var(--red); }
+
+    /* Top ad strip */
+    .top-ad-strip { background: #fff; padding: 8px 20px 12px; border-bottom: 1px solid var(--border); display: flex; justify-content: center; }
+
+    /* Main Layout */
+    main { flex: 1 0 auto; display: flex; flex-direction: column; min-height: 0; min-width: 0; }
+    .main-wrapper { max-width: 1200px; margin: 0 auto; width: 100%; padding: 24px 20px; display: grid; grid-template-columns: 1fr 300px; gap: 28px; flex: 1; min-width: 0; }
+    .main-wrapper > * { min-width: 0; }
+    @media (max-width: 900px) { .main-wrapper { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    @media (max-width: 600px) {
+      .header-inner { justify-content: center; }
+      nav { margin-left: 0; width: 100%; }
+      nav ul { justify-content: center; flex-wrap: wrap; gap: 12px 16px; }
+      .tool-card { padding: 28px 18px; }
+      .tool-card .hero-heading { font-size: 22px; }
+      .input-row { flex-direction: column; }
+      .btn-grab { justify-content: center; }
+      .thumb-grid { grid-template-columns: 1fr; }
+      .content-card { padding: 20px 16px; }
+    }
+
+    /* Hero Tool Card */
+    .tool-card { background: linear-gradient(135deg, #1f2937 0%, #111827 100%); border-radius: 16px; padding: 40px 36px; color: #fff; text-align: center; }
+    .tool-card .hero-heading { font-size: 28px; font-weight: 800; margin-bottom: 8px; line-height: 1.25; }
+    .tool-card .hero-sub { font-size: 14px; color: #9ca3af; margin-bottom: 28px; max-width: 540px; margin-left: auto; margin-right: auto; }
+    .input-row { display: flex; gap: 10px; max-width: 640px; margin: 0 auto; }
+    .url-input { flex: 1; padding: 14px 18px; border-radius: 8px; border: 2px solid transparent; font-size: 14px; outline: none; transition: border-color .2s; }
+    .url-input:focus { border-color: var(--red); }
+    .url-input::placeholder { color: #9ca3af; }
+    .btn-grab { padding: 14px 24px; background: var(--red); color: #fff; border: none; border-radius: 8px; font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap; transition: background .15s, transform .1s; display: flex; align-items: center; gap: 6px; }
+    .btn-grab:hover { background: #cc0000; }
+    .btn-grab:active { transform: scale(.97); }
+    .btn-grab svg { width: 16px; height: 16px; fill: #fff; }
+    .supported { margin-top: 14px; font-size: 12px; color: #6b7280; }
+
+    .error-box { display: none; background: #fef2f2; border: 1px solid #fca5a5; color: #b91c1c; padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-top: 16px; text-align: left; max-width: 640px; margin-left: auto; margin-right: auto; }
+
+    /* Results */
+    #results { display: none; margin-top: 28px; }
+    .results-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+    .results-header h2 { font-size: 18px; font-weight: 700; color: var(--dark); }
+    .video-platform-badge { padding: 3px 10px; border-radius: 100px; font-size: 11px; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+    .badge-youtube { background: #fee2e2; color: var(--red); }
+    .badge-vimeo   { background: #dbeafe; color: #1d4ed8; }
+    .in-content-ad { display: flex; justify-content: center; margin: 20px 0; }
+
+    /* Thumbnail Grid */
+    .thumb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .thumb-card { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); overflow: hidden; transition: transform .2s, box-shadow .2s; }
+    .thumb-card:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(0,0,0,.12); }
+    .thumb-img-wrap { position: relative; width: 100%; background: #000; aspect-ratio: 16/9; overflow: hidden; }
+    .thumb-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .quality-label { position: absolute; top: 8px; left: 8px; background: rgba(0,0,0,.75); color: #fff; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; letter-spacing: .04em; }
+    .thumb-info { padding: 14px; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .thumb-meta { font-size: 12px; }
+    .thumb-meta strong { display: block; font-size: 13px; color: var(--dark); margin-bottom: 2px; }
+    .thumb-meta span { color: #6b7280; }
+    .btn-download { display: inline-flex; align-items: center; gap: 6px; padding: 8px 14px; background: var(--green); color: #fff; border: none; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; text-decoration: none; white-space: nowrap; transition: background .15s; flex-shrink: 0; }
+    .btn-download:hover { background: #15803d; }
+    .btn-download svg { width: 14px; height: 14px; fill: #fff; }
+
+    /* Sidebar */
+    .sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-widget { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); padding: 18px; }
+    .sidebar-widget h3 { font-size: 13px; font-weight: 700; color: var(--mid); text-transform: uppercase; letter-spacing: .05em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    .how-list { list-style: none; counter-reset: steps; }
+    .how-list li { counter-increment: steps; display: flex; align-items: flex-start; gap: 10px; font-size: 13px; color: var(--mid); margin-bottom: 12px; line-height: 1.5; }
+    .how-list li::before { content: counter(steps); display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; background: var(--red); color: #fff; font-size: 11px; font-weight: 800; border-radius: 50%; flex-shrink: 0; margin-top: 1px; }
+
+    /* Content Sections */
+    .content-card { background: #fff; border-radius: var(--radius); border: 1px solid var(--border); padding: 28px; margin-top: 24px; }
+    .content-card h2 { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: var(--dark); }
+    .content-card h3 { font-size: 16px; font-weight: 700; margin: 20px 0 8px; color: var(--dark); }
+    .content-card p  { font-size: 14px; color: var(--mid); line-height: 1.75; margin-bottom: 12px; }
+    .content-card ul { margin: 0 0 12px 20px; }
+    .content-card li { font-size: 14px; color: var(--mid); line-height: 1.75; }
+
+    /* Resolution Table */
+    .res-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 12px 0 16px; }
+    .res-table th { background: #f3f4f6; padding: 8px 12px; text-align: left; font-weight: 700; color: var(--dark); border: 1px solid var(--border); }
+    .res-table td { padding: 8px 12px; border: 1px solid var(--border); color: var(--mid); }
+    .res-table tr:nth-child(even) td { background: #f9fafb; }
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    /* FAQ */
+    .faq-list { list-style: none; }
+    .faq-item { border-bottom: 1px solid var(--border); }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { width: 100%; text-align: left; background: none; border: none; cursor: pointer; padding: 16px 0; font-size: 15px; font-weight: 600; color: var(--dark); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .faq-q:hover { color: var(--red); }
+    .faq-q svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; flex-shrink: 0; transition: transform .25s; }
+    .faq-q[aria-expanded="true"] svg { transform: rotate(45deg); }
+    .faq-a { font-size: 14px; color: var(--mid); line-height: 1.75; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; }
+    .faq-a.open { max-height: 500px; padding-bottom: 16px; }
+
+    /* Footer Ad + Footer */
+    .footer-ad { background: #fff; border-top: 1px solid var(--border); padding: 12px 20px; display: flex; justify-content: center; }
+    footer { background: var(--dark); color: #9ca3af; text-align: center; padding: 20px; font-size: 12px; }
+    footer a { color: #d1d5db; text-decoration: none; }
+    footer a:hover { color: #fff; }
+    .footer-links { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 8px; }
+
+    /* Popup */
+    .popup-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.65); display: flex; align-items: center; justify-content: center; z-index: 9999; opacity: 0; pointer-events: none; transition: opacity .3s; }
+    .popup-overlay.visible { opacity: 1; pointer-events: all; }
+    .popup-box { background: #fff; border-radius: 12px; overflow: hidden; width: 340px; box-shadow: 0 20px 60px rgba(0,0,0,.35); position: relative; }
+    .popup-close { position: absolute; top: 10px; right: 12px; background: rgba(0,0,0,.55); color: #fff; border: none; cursor: pointer; width: 28px; height: 28px; border-radius: 50%; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; z-index: 10; transition: background .15s; }
+    .popup-close:hover { background: rgba(0,0,0,.8); }
+    .popup-countdown { position: absolute; top: 10px; left: 12px; background: rgba(0,0,0,.55); color: #fff; font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 4px; z-index: 10; }
+    .popup-ad-content { width: 300px; height: 250px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f3f4f6; color: #9ca3af; font-size: 12px; gap: 8px; }
+    .popup-ad-content svg { width: 40px; height: 40px; opacity: .3; }
+    .popup-ad-label { text-align: center; padding: 10px; font-size: 10px; color: #9ca3af; border-top: 1px solid var(--border); }
+
+    /* Spinner */
+    .spinner { display: none; margin: 30px auto; width: 40px; height: 40px; }
+    .spinner circle { fill: none; stroke: var(--red); stroke-width: 4; stroke-dasharray: 80; stroke-dashoffset: 60; animation: spin .8s linear infinite; transform-origin: center; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .hidden { display: none !important; }
+
+    /* Skip link for accessibility (also helps crawlers) */
+    .skip-link { position: absolute; left: -9999px; top: 4px; background: var(--red); color: #fff; padding: 8px 16px; border-radius: 4px; font-weight: 700; z-index: 10000; }
+    .skip-link:focus { left: 4px; }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#tool">Skip to tool</a>
+
+<!-- ══════ TOP LEADERBOARD AD ══════════════════════════════ -->
+<div class="top-ad-strip" role="complementary" aria-label="Advertisement">
+  <div class="ad-unit ad-leaderboard">
+    <!-- Google AdSense 728×90
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    <span>728 × 90 — Top Leaderboard Ad</span>
+  </div>
+</div>
+
+<!-- ══════ HEADER ══════════════════════════════════════════ -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="/" aria-label="ThumbSnag – Home">
+      <div class="logo-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21.8 8s-.2-1.4-.8-2c-.7-.8-1.6-.8-2-.9C16.2 5 12 5 12 5s-4.2 0-7 .1c-.4.1-1.3.1-2 .9-.6.6-.8 2-.8 2S2 9.6 2 11.2v1.5c0 1.6.2 3.2.2 3.2s.2 1.4.8 2c.7.8 1.7.7 2.1.8C6.4 19 12 19 12 19s4.2 0 7-.1c.4-.1 1.3-.1 2-.9.6-.6.8-2 .8-2s.2-1.6.2-3.2v-1.5C22 9.6 21.8 8 21.8 8zM9.7 14.5V9l5.6 2.8-5.6 2.7z"/></svg>
+      </div>
+      <div class="logo-text">
+        <h1>ThumbSnag</h1>
+        <span>YouTube &amp; Vimeo Thumbnail Downloader</span>
+      </div>
+    </a>
+    <nav aria-label="Site navigation">
+      <ul>
+        <li><a href="#tool">Downloader</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════ MAIN ════════════════════════════════════════════ -->
+<main>
+<div class="main-wrapper">
+
+  <!-- ── Left Column ── -->
+  <div>
+
+    <!-- ── Hero Tool ── -->
+    <section id="tool" aria-labelledby="tool-heading">
+      <div class="tool-card">
+        <h2 class="hero-heading" id="tool-heading">
+          YouTube Thumbnail Downloader
+        </h2>
+        <p class="hero-sub">
+          Download any YouTube or Vimeo thumbnail in <strong>HD (1280×720)</strong>, SD, HQ, MQ and more —
+          free, instant, no account needed. Paste the video URL below.
+        </p>
+
+        <div class="input-row" role="search">
+          <label for="urlInput" class="hidden">YouTube or Vimeo video URL</label>
+          <input
+            id="urlInput"
+            class="url-input"
+            type="url"
+            placeholder="https://www.youtube.com/watch?v=... or https://vimeo.com/..."
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="YouTube or Vimeo video URL"
+          />
+          <button class="btn-grab" onclick="handleGrab()" aria-label="Get Thumbnails">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+            Get Thumbnails
+          </button>
+        </div>
+
+        <p class="supported">
+          Supports: <strong>youtube.com</strong> · <strong>youtu.be</strong> · <strong>YouTube Shorts</strong> · <strong>vimeo.com</strong> · <strong>player.vimeo.com</strong>
+        </p>
+        <div id="errorBox" class="error-box" role="alert"></div>
+      </div>
+    </section>
+
+    <!-- Spinner -->
+    <svg class="spinner" id="spinner" viewBox="0 0 40 40" aria-label="Loading thumbnails" role="img">
+      <circle cx="20" cy="20" r="16"/>
+    </svg>
+
+    <!-- ── Results ── -->
+    <section id="results" aria-live="polite" aria-label="Thumbnail results">
+      <div class="in-content-ad" aria-hidden="true">
+        <div class="ad-unit" style="width:100%;max-width:468px;height:60px;">
+          <!-- AdSense 468×60
+          <ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px"
+               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+          <span>468 × 60 — In-Content Ad</span>
+        </div>
+      </div>
+
+      <div class="results-header">
+        <h2>Available Thumbnails</h2>
+        <span id="platformBadge" class="video-platform-badge"></span>
+      </div>
+      <div id="thumbGrid" class="thumb-grid"></div>
+
+      <div class="in-content-ad" style="margin-top:24px;" aria-hidden="true">
+        <div class="ad-unit ad-leaderboard">
+          <!-- AdSense 728×90
+          <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+               data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+          <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+          <span>728 × 90 — Post-Results Ad</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <article class="content-card" id="how-it-works" aria-labelledby="hiw-heading">
+      <h2 id="hiw-heading">How to Download a YouTube Thumbnail (4 Steps)</h2>
+      <p>Downloading a YouTube video thumbnail takes under a minute with ThumbSnag. No software download or account is required — the tool works entirely in your browser.</p>
+      <ol style="margin:12px 0 0 20px;">
+        <li style="font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:8px;"><strong>Copy the YouTube URL.</strong> Open the video on youtube.com and copy the link from your browser's address bar. Short links from youtu.be and YouTube Shorts both work.</li>
+        <li style="font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:8px;"><strong>Paste into the box above.</strong> Click the input field, paste with Ctrl+V (or Cmd+V on Mac), then press Enter or click <em>Get Thumbnails</em>.</li>
+        <li style="font-size:14px;color:var(--mid);line-height:1.75;margin-bottom:8px;"><strong>Browse all resolutions.</strong> We display every available size from HD 1280×720 down to the default 120×90 thumbnail.</li>
+        <li style="font-size:14px;color:var(--mid);line-height:1.75;"><strong>Click Download.</strong> The image saves directly to your device. No watermark, no compression.</li>
+      </ol>
+
+      <h3>YouTube Thumbnail Resolutions Explained</h3>
+      <p>YouTube generates up to five thumbnail variants per video. Here's what each key name means:</p>
+      <div class="table-scroll">
+      <table class="res-table" aria-label="YouTube thumbnail resolution reference">
+        <thead>
+          <tr><th>Key Name</th><th>Resolution</th><th>Quality</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>maxresdefault</td><td>1280 × 720</td><td>HD</td><td>Only available for HD uploads</td></tr>
+          <tr><td>sddefault</td><td>640 × 480</td><td>SD</td><td>Available for most videos</td></tr>
+          <tr><td>hqdefault</td><td>480 × 360</td><td>HQ</td><td>Always available</td></tr>
+          <tr><td>mqdefault</td><td>320 × 180</td><td>MQ</td><td>Always available</td></tr>
+          <tr><td>default</td><td>120 × 90</td><td>Small</td><td>Always available</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Downloading Vimeo Thumbnails</h3>
+      <p>Vimeo uses a different system — thumbnails are served from <code>i.vimeocdn.com</code> and the URL is retrieved via Vimeo's public oEmbed API. No API key or Vimeo account is required. ThumbSnag fetches the highest quality image available and offers multiple sizes where they exist.</p>
+
+      <h3>Which Resolution Should I Download?</h3>
+      <ul>
+        <li><strong>Blog posts, presentations, social media:</strong> use HD (maxresdefault, 1280×720).</li>
+        <li><strong>Email newsletters, image grids:</strong> HQ (480×360) is a good balance of quality and file size.</li>
+        <li><strong>Favicons, placeholders, quick previews:</strong> Default (120×90) keeps bandwidth low.</li>
+      </ul>
+    </article>
+
+    <!-- ── FAQ ── -->
+    <article class="content-card" id="faq" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Frequently Asked Questions</h2>
+      <ul class="faq-list" role="list">
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            How do I download a YouTube thumbnail?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            Copy the YouTube video URL, paste it into the input field at the top of this page, and click <strong>Get Thumbnails</strong>. Choose the resolution you need and click <strong>Download</strong> — the image saves directly to your device at no cost.
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            Is it legal to download YouTube thumbnails?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            YouTube thumbnail images are publicly accessible on YouTube's CDN. Downloading them for personal use, research, or commentary is generally fine under fair-use principles. If you plan to reuse a thumbnail commercially or in published work, verify that the image doesn't contain third-party copyrighted artwork and seek permission from the video's creator when in doubt.
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            Can I download Vimeo thumbnails too?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            Yes. Paste any <code>vimeo.com</code> or <code>player.vimeo.com</code> URL and ThumbSnag will retrieve the highest-quality thumbnail available for that video via Vimeo's public oEmbed API.
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            Why is the HD thumbnail (maxresdefault) missing?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            YouTube only creates a 1280×720 <em>maxresdefault</em> thumbnail for videos that were originally uploaded in HD quality. Older videos or those uploaded at 480p or lower may only have SD (640×480) or HQ (480×360) available. ThumbSnag automatically checks each size and hides the ones that don't exist, so you only see what's actually there.
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            Do I need to create an account or pay?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            No. ThumbSnag is completely free with no sign-up, no subscription, and no hidden fees. Simply paste a URL and download.
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            What URL formats does ThumbSnag support?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            All common YouTube and Vimeo URL formats are supported, including:
+            <ul style="margin:8px 0 0 18px;">
+              <li>youtube.com/watch?v=VIDEO_ID</li>
+              <li>youtu.be/VIDEO_ID (short links)</li>
+              <li>youtube.com/shorts/VIDEO_ID</li>
+              <li>youtube.com/live/VIDEO_ID</li>
+              <li>youtube.com/embed/VIDEO_ID</li>
+              <li>vimeo.com/VIDEO_ID</li>
+              <li>player.vimeo.com/video/VIDEO_ID</li>
+              <li>vimeo.com/channels/CHANNEL/VIDEO_ID</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="faq-item">
+          <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
+            Can I use downloaded thumbnails for my own YouTube channel?
+            <svg viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-a" role="region">
+            ThumbSnag lets you study and download thumbnails for inspiration or analysis. However, uploading another creator's thumbnail as your own without permission could constitute copyright infringement. Use downloaded thumbnails for reference, mood boards, or competitive research — not as your own creative assets.
+          </div>
+        </li>
+
+      </ul>
+    </article>
+
+  </div><!-- /left col -->
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" aria-label="Sidebar">
+
+    <div class="ad-unit ad-rectangle" role="complementary" aria-label="Advertisement">
+      <!-- AdSense 300×250
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      <span>300 × 250 — Sidebar Ad</span>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>How It Works</h3>
+      <ol class="how-list">
+        <li>Copy the YouTube or Vimeo video URL.</li>
+        <li>Paste it into the tool and click <strong>Get Thumbnails</strong>.</li>
+        <li>Browse all available resolutions — HD to small.</li>
+        <li>Click <strong>Download</strong>. Image saves instantly.</li>
+      </ol>
+    </div>
+
+    <div class="ad-unit ad-rectangle" role="complementary" aria-label="Advertisement">
+      <!-- AdSense 300×250
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      <span>300 × 250 — Sidebar Ad 2</span>
+    </div>
+
+    <div class="sidebar-widget">
+      <h3>Pro Tips</h3>
+      <ul style="list-style:none;">
+        <li style="font-size:13px;color:var(--mid);margin-bottom:10px;line-height:1.5;display:flex;gap:8px;"><span>💡</span><span><strong>maxresdefault</strong> (1280×720) is the highest quality but only exists for HD videos.</span></li>
+        <li style="font-size:13px;color:var(--mid);margin-bottom:10px;line-height:1.5;display:flex;gap:8px;"><span>📱</span><span>YouTube Shorts and live stream URLs are fully supported.</span></li>
+        <li style="font-size:13px;color:var(--mid);line-height:1.5;display:flex;gap:8px;"><span>🎬</span><span>Vimeo thumbnails are fetched live from the public Vimeo API — no key needed.</span></li>
+      </ul>
+    </div>
+
+    <div class="ad-unit" style="width:100%;height:120px;" role="complementary" aria-label="Advertisement">
+      <!-- AdSense 300×600
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      <span>300 × 600 — Half Page Ad</span>
+    </div>
+
+  </aside>
+
+</div><!-- /main-wrapper -->
+</main>
+
+<!-- ══════ FOOTER AD ═══════════════════════════════════════ -->
+<div class="footer-ad" role="complementary" aria-label="Advertisement">
+  <div class="ad-unit ad-leaderboard">
+    <!-- AdSense 728×90
+    <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+    <span>728 × 90 — Footer Leaderboard Ad</span>
+  </div>
+</div>
+
+<!-- ══════ FOOTER ══════════════════════════════════════════ -->
+<footer>
+  <nav class="footer-links" aria-label="Footer navigation">
+    <a href="/">Home</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#faq">FAQ</a>
+    <a href="/privacy-policy.html">Privacy Policy</a>
+    <a href="/terms.html">Terms of Use</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <p>© 2026 ThumbSnag — Free YouTube &amp; Vimeo Thumbnail Downloader</p>
+  <p style="margin-top:6px;font-size:11px;color:#6b7280;">Not affiliated with YouTube, Google, or Vimeo. All thumbnails are the property of their respective owners.</p>
+</footer>
+
+<!-- ══════ POPUP AD ════════════════════════════════════════ -->
+<div class="popup-overlay" id="popupOverlay" role="dialog" aria-modal="true" aria-label="Advertisement">
+  <div class="popup-box">
+    <span class="popup-countdown" id="popupCountdown" aria-live="polite">Close in 5…</span>
+    <button class="popup-close hidden" id="popupClose" onclick="closePopup()" aria-label="Close advertisement">✕</button>
+    <div class="popup-ad-content">
+      <!-- AdSense 300×250 popup
+      <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+      <span>300 × 250 — Popup Ad</span>
+      <span style="font-size:10px;">Replace with your AdSense unit</span>
+    </div>
+    <p class="popup-ad-label">Advertisement</p>
+  </div>
+</div>
+
+<!-- ══════ JAVASCRIPT ══════════════════════════════════════ -->
+<script>
+  /* ── Popup Timer ─────────────────────────────────────── */
+  (function () {
+    let shown = false;
+    function showPopup() {
+      if (shown) return;
+      shown = true;
+      const overlay   = document.getElementById('popupOverlay');
+      const countdown = document.getElementById('popupCountdown');
+      const closeBtn  = document.getElementById('popupClose');
+      overlay.classList.add('visible');
+      let sec = 5;
+      countdown.textContent = `Close in ${sec}…`;
+      const t = setInterval(() => {
+        sec--;
+        if (sec <= 0) { clearInterval(t); countdown.classList.add('hidden'); closeBtn.classList.remove('hidden'); }
+        else countdown.textContent = `Close in ${sec}…`;
+      }, 1000);
+    }
+    setTimeout(showPopup, 6000);
+    window._showPopup = showPopup;
+  })();
+
+  function closePopup() { document.getElementById('popupOverlay').classList.remove('visible'); }
+
+  /* ── FAQ Accordion ───────────────────────────────────── */
+  function toggleFaq(btn) {
+    const answer   = btn.nextElementSibling;
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    // Close all
+    document.querySelectorAll('.faq-q').forEach(b => {
+      b.setAttribute('aria-expanded', 'false');
+      b.nextElementSibling.classList.remove('open');
+    });
+    if (!expanded) { btn.setAttribute('aria-expanded', 'true'); answer.classList.add('open'); }
+  }
+
+  /* ── URL Parsers ─────────────────────────────────────── */
+  function extractYouTubeId(url) {
+    const patterns = [
+      /[?&]v=([a-zA-Z0-9_-]{11})/,
+      /youtu\.be\/([a-zA-Z0-9_-]{11})/,
+      /\/embed\/([a-zA-Z0-9_-]{11})/,
+      /\/shorts\/([a-zA-Z0-9_-]{11})/,
+      /\/live\/([a-zA-Z0-9_-]{11})/,
+    ];
+    for (const re of patterns) { const m = url.match(re); if (m) return m[1]; }
+    return null;
+  }
+  function extractVimeoId(url) {
+    const m = url.match(/vimeo\.com\/(?:video\/|channels\/[^\/]+\/|groups\/[^\/]+\/videos\/)?(\d+)/);
+    return m ? m[1] : null;
+  }
+
+  /* ── YouTube Thumbnail Specs ─────────────────────────── */
+  const YT_RESOLUTIONS = [
+    { key: 'maxresdefault', label: 'HD',      size: '1280 × 720', quality: 'Highest Quality' },
+    { key: 'sddefault',     label: 'SD',      size: '640 × 480',  quality: 'Standard' },
+    { key: 'hqdefault',     label: 'HQ',      size: '480 × 360',  quality: 'High Quality' },
+    { key: 'mqdefault',     label: 'MQ',      size: '320 × 180',  quality: 'Medium Quality' },
+    { key: 'default',       label: 'Default', size: '120 × 90',   quality: 'Small' },
+  ];
+
+  /* ── Main Handler ────────────────────────────────────── */
+  async function handleGrab() {
+    const raw      = document.getElementById('urlInput').value.trim();
+    const errorBox = document.getElementById('errorBox');
+    const results  = document.getElementById('results');
+    const spinner  = document.getElementById('spinner');
+    const grid     = document.getElementById('thumbGrid');
+    const badge    = document.getElementById('platformBadge');
+
+    errorBox.style.display = 'none';
+    results.style.display  = 'none';
+    grid.innerHTML         = '';
+
+    if (!raw) { showError('Please paste a YouTube or Vimeo URL first.'); return; }
+    if (window._showPopup) { window._showPopup(); window._showPopup = null; }
+
+    const ytId    = extractYouTubeId(raw);
+    const vimeoId = extractVimeoId(raw);
+    if (!ytId && !vimeoId) { showError('Could not recognise that URL. Please paste a valid YouTube or Vimeo video link.'); return; }
+
+    spinner.style.display = 'block';
+    try {
+      if (ytId) await renderYouTube(ytId, grid, badge);
+      else      await renderVimeo(vimeoId, grid, badge);
+      results.style.display = 'block';
+      results.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } catch (e) {
+      showError(e.message || 'Something went wrong. Please try again.');
+    } finally {
+      spinner.style.display = 'none';
+    }
+  }
+
+  /* ── YouTube Render ──────────────────────────────────── */
+  async function renderYouTube(id, grid, badge) {
+    badge.textContent = 'YouTube';
+    badge.className   = 'video-platform-badge badge-youtube';
+    for (const res of YT_RESOLUTIONS) {
+      const url = `https://img.youtube.com/vi/${id}/${res.key}.jpg`;
+      if (res.key === 'maxresdefault') { const ok = await imageExists(url); if (!ok) continue; }
+      grid.appendChild(buildCard({ imgUrl: url, label: res.label, size: res.size, quality: res.quality, filename: `youtube-${id}-${res.key}.jpg`, downloadUrl: url }));
+    }
+  }
+
+  /* ── Vimeo Render ────────────────────────────────────── */
+  async function renderVimeo(id, grid, badge) {
+    badge.textContent = 'Vimeo';
+    badge.className   = 'video-platform-badge badge-vimeo';
+    const resp = await fetch(`https://vimeo.com/api/oembed.json?url=https://vimeo.com/${id}&width=1280`);
+    if (!resp.ok) throw new Error('Could not fetch Vimeo data. Check the URL and try again.');
+    const data = await resp.json();
+    const base = data.thumbnail_url.replace(/(_\d+(?:x\d+)?)\.jpg$/, '');
+    const sizes = [
+      { suffix: '1920',    label: 'HD',    size: '1920 × 1080', quality: 'Highest Quality' },
+      { suffix: '1280',    label: 'HD',    size: '1280 × 720',  quality: 'High Definition' },
+      { suffix: '640',     label: 'SD',    size: '640 × 360',   quality: 'Standard' },
+      { suffix: '295x166', label: 'Small', size: '295 × 166',   quality: 'Thumbnail' },
+    ];
+    let added = 0;
+    for (const s of sizes) {
+      const url = `${base}_${s.suffix}.jpg`;
+      if (!(await imageExists(url))) continue;
+      grid.appendChild(buildCard({ imgUrl: url, label: s.label, size: s.size, quality: s.quality, filename: `vimeo-${id}-${s.suffix}.jpg`, downloadUrl: url }));
+      added++;
+    }
+    if (added === 0 && data.thumbnail_url) {
+      grid.appendChild(buildCard({ imgUrl: data.thumbnail_url, label: 'Default', size: `${data.thumbnail_width} × ${data.thumbnail_height}`, quality: 'Original', filename: `vimeo-${id}-default.jpg`, downloadUrl: data.thumbnail_url }));
+    }
+  }
+
+  /* ── Card Builder ────────────────────────────────────── */
+  function buildCard({ imgUrl, label, size, quality, filename, downloadUrl }) {
+    const card = document.createElement('article');
+    card.className = 'thumb-card';
+    card.setAttribute('aria-label', `${quality} thumbnail – ${size}`);
+    card.innerHTML = `
+      <div class="thumb-img-wrap">
+        <img src="${imgUrl}" alt="${quality} YouTube thumbnail – ${size}" loading="lazy" width="320" height="180" />
+        <span class="quality-label" aria-hidden="true">${label}</span>
+      </div>
+      <div class="thumb-info">
+        <div class="thumb-meta">
+          <strong>${size}</strong>
+          <span>${quality}</span>
+        </div>
+        <a class="btn-download" href="${downloadUrl}" download="${filename}" target="_blank"
+           aria-label="Download ${quality} thumbnail (${size})"
+           onclick="handleDownload(event,'${downloadUrl}','${filename}')">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+          Download
+        </a>
+      </div>`;
+    card.querySelector('img').addEventListener('error', () => { card.style.display = 'none'; });
+    return card;
+  }
+
+  /* ── Download via Blob ───────────────────────────────── */
+  async function handleDownload(e, url, filename) {
+    e.preventDefault();
+    try {
+      const resp = await fetch(url, { mode: 'cors' });
+      const blob = await resp.blob();
+      const burl = URL.createObjectURL(blob);
+      const a    = document.createElement('a');
+      a.href = burl; a.download = filename; a.click();
+      setTimeout(() => URL.revokeObjectURL(burl), 5000);
+    } catch { window.open(url, '_blank'); }
+  }
+
+  /* ── Helpers ─────────────────────────────────────────── */
+  function imageExists(url) {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload  = () => resolve(img.width > 1);
+      img.onerror = () => resolve(false);
+      img.src = url;
+    });
+  }
+  function showError(msg) {
+    const b = document.getElementById('errorBox');
+    b.textContent = msg; b.style.display = 'block';
+  }
+
+  /* ── Enter key ───────────────────────────────────────── */
+  document.getElementById('urlInput').addEventListener('keydown', e => { if (e.key === 'Enter') handleGrab(); });
+
+  /* ── URL param pre-fill (e.g. ?url=https://...) ─────── */
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const u = params.get('url');
+    if (u) { document.getElementById('urlInput').value = u; handleGrab(); }
+  })();
+</script>
+</body>
+</html>
